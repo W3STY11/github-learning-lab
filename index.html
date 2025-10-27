@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - GitHub Learning Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🐍 Snake Game</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">Best:</span>
+                    <span id="highScore">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn-primary">Start Game</button>
+            <button id="pauseBtn" class="btn-secondary">Pause</button>
+            <button id="resetBtn" class="btn-secondary">Reset</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <p>Use arrow keys ↑ ↓ ← → to control the snake</p>
+            <p>Eat the red food to grow and score points!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
